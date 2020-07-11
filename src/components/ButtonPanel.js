@@ -2,7 +2,10 @@ import React from 'react';
 import Button from './Button';
 
 const ButtonPanel = () => {
-
+  const panels = {
+    height: '100px',
+    display: 'flex',
+  };
 
   return (
     <div className="panel-buttons">
