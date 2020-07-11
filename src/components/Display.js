@@ -2,20 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Display = props => {
-  const displayArea = {
-    height: '100px',
-    fontWeight: 'bolder',
-    color: '#fff',
-    backgroundColor: '#858694',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    padding: '0 1rem',
-  };
-
   const { value } = props;
   return (
-    <div className="display-area" style={displayArea}>
+    <div className="display-area">
       {value}
     </div>
   );

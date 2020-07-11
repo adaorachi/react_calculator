@@ -1,45 +1,38 @@
 import React from 'react';
 import Button from './Button';
 
-const ButtonPanel = () => {
-  const panels = {
-    height: '100px',
-    display: 'flex',
-  };
-
-  return (
-    <div className="panel-buttons">
-      <div className="panels" style={panels}>
-        <Button name="AC" color />
-        <Button name="+/-" color />
-        <Button name="%" color />
-        <Button name="÷" />
-      </div>
-      <div className="panels" style={panels}>
-        <Button name="7" color />
-        <Button name="8" color />
-        <Button name="9" color />
-        <Button name="x" />
-      </div>
-      <div className="panels" style={panels}>
-        <Button name="4" color />
-        <Button name="5" color />
-        <Button name="6" color />
-        <Button name="-" />
-      </div>
-      <div className="panels" style={panels}>
-        <Button name="1" color />
-        <Button name="2" color />
-        <Button name="3" color />
-        <Button name="+" />
-      </div>
-      <div className="panels" style={panels}>
-        <Button name="0" wide color />
-        <Button name="." color />
-        <Button name="=" />
-      </div>
+const ButtonPanel = () => (
+  <div className="panel-buttons">
+    <div className="panels">
+      <Button name="AC" color="grey" />
+      <Button name="+/-" color="grey" />
+      <Button name="%" color="grey" />
+      <Button name="÷" />
     </div>
-  );
-};
+    <div className="panels">
+      <Button name="7" color="grey" />
+      <Button name="8" color="grey" />
+      <Button name="9" color="grey" />
+      <Button name="x" />
+    </div>
+    <div className="panels">
+      <Button name="4" color="grey" />
+      <Button name="5" color="grey" />
+      <Button name="6" color="grey" />
+      <Button name="-" />
+    </div>
+    <div className="panels">
+      <Button name="1" color="grey" />
+      <Button name="2" color="grey" />
+      <Button name="3" color="grey" />
+      <Button name="+" />
+    </div>
+    <div className="panels">
+      <Button name="0" wide color="grey" />
+      <Button name="." color="grey" />
+      <Button name="=" />
+    </div>
+  </div>
+);
 
 export default ButtonPanel;

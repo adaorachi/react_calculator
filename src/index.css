@@ -13,3 +13,44 @@ body {
     'Helvetica Neue',
     sans-serif;
 }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 3rem;
+}
+
+.calculator-container {
+  width: 700px;
+}
+
+.display-area {
+  height: 100px;
+  font-weight: bolder;
+  color: #fff;
+  background-color: #858694;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1rem;
+}
+
+.panels {
+  height: 100px;
+  display: flex;
+}
+
+.button {
+  outline: none;
+  border: 2px solid #d1d1d1;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.02);
+  border: 3px solid #d0d9f1;
+  color: #333;
+}
