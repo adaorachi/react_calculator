@@ -34,6 +34,27 @@ const calculate = (calcObj, buttonName) => {
       next = null;
       operation = buttonName;
     }
+  } else if (buttonName === '=') {
+    if (next && operation) {
+      total = operate(total, next, operation);
+      next = null;
+      operation = null;
+    } else {
+      return {};
+    }
+  } else if (buttonName === '.') {
+    if (total && next) {
+      if (operation) {
+        next += buttonName;
+      }
+      if (!total.includes('.') && !next.includes('.')) {
+        next += '.';
+        total += '.';
+      }
+    } else {
+      total = '0.';
+      next = '0.';
+    }
   }
 
   return { total, next, operation };
