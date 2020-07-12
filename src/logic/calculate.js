@@ -8,6 +8,27 @@ const calculate = (calcObj, buttonName) => {
     total = null;
     next = null;
     operation = null;
+  } else if (buttonName === '+/-') {
+    next = (-1 * next).toString();
+    total = (-1 * total).toString();
+  } else if (isNumber(buttonName)) {
+    if (next) {
+      if (operation) {
+        next += buttonName;
+      } else if (total && !operation) {
+        total += buttonName;
+        next += buttonName;
+      }
+    } else {
+      if (total) {
+        next = buttonName;
+      } else {
+        next = buttonName;
+        total = buttonName;
+      } if (operation) {
+        next = buttonName;
+      }
+    }
   }
 
   return { total, next, operation };
