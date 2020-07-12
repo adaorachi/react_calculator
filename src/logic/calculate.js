@@ -29,6 +29,11 @@ const calculate = (calcObj, buttonName) => {
         next = buttonName;
       }
     }
+  } else if (isOperation(buttonName)) {
+    if (!operation && total) {
+      next = null;
+      operation = buttonName;
+    }
   }
 
   return { total, next, operation };
