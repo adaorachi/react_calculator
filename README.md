@@ -1,17 +1,15 @@
 # React Calculator
-A calculator project built with react.
+A calculator project built with React.
 
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
 
 - [About the Project](#about-the-project)
-- [Screenshots](#screenshots)
 - [Prerequisites Installations](#prerequisites-installations)
 - [Technology used](#technology-used)
 - [Usage/Getting Started](#how-to-Use)
 - [Live Version](#live-version)
-- [Roadmap](#roadmap)
 - [License](#license)
 - [Authors](#authors)
 
@@ -19,15 +17,8 @@ A calculator project built with react.
 
 ## About The Project
 
-This project is a Calculator App built with React. It implements the functionality of building components in React, using states and props to store and transport values. 
+This project is a Calculator App with the features of making simple mathematical operations. It implements the functionality of building components in React, using states and props to store and transport values. It also uses the Big.js package to manipulate the operations and for larger data.
 
-In this project, the complete feature of the app renders the following:
-  - Features are in progress!
-
-
-## Screenshots
-
-Work in Progress
 
 
 ## Prerequisites Installations
@@ -76,8 +67,8 @@ your@pc:~$ npm run start
 ```
 
 ## Live Version
-
-Live version is still in progress
+Here is a preview of this project's live version. Feel free and visit and use it.
+[React-Calculator](https://react-calculator11.herokuapp.com/)
 
 
 <!-- CONTACT -->
@@ -87,3 +78,5 @@ Live version is still in progress
 MaryAnn Chukwuka
 
 - [Github profile](https://github.com/adaorachi)
+- [Twitter profile](https://twitter.com/adaorachi)
+- [LinkedIn profile](https://linkedin.com/adaorachi)
