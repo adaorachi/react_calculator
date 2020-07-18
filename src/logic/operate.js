@@ -15,7 +15,9 @@ const operate = (numberOne, numberTwo, operation) => {
       finalOpr = numOneEval.times(numTwoEval).toString();
       break;
     case '÷':
-      finalOpr = numOneEval.div(numTwoEval).toString();
+      if (numberTwo !== '0') {
+        finalOpr = numOneEval.div(numTwoEval).toString();
+      }
       break;
     case '%':
       finalOpr = numOneEval.div(100).toString();
